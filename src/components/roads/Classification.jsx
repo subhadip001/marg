@@ -6,11 +6,11 @@ import img3 from "./image 3.png";
 
 function Classification() {
   return (
-    <div className="h-screen w-full mx-auto pl-16 py-12  flex flex-col justify-center justify-items-center ">
+    <div className="h-screen w-full  flex flex-col justify-center justify-items-center p-16">
       <div className="text-[#845460] text-3xl font-bold mb-4">
         CLASSIFICATION OF HISTORIC ROADS / ROUTES
       </div>
-      <div className="h-screen w-full grid grid-cols-3 mt-8">
+      <div className="grid grid-cols-3 mt-8 w-full ">
         <Card
           url={img1}
           title="LAND ROUTES"

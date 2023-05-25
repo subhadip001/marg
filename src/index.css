@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+.body {
+  font-family: "Open Sans", sans-serif;
+}
+.art {
+  /* 1 pixel black shadow to left, top, right and bottom */
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 6vw;
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -8,7 +8,7 @@ const Methodology = () => {
         <div className="mb-14">
           <h1 className="text-[2.5vw] font-bold text-[#845460]">OUR METHODOLOGY</h1>
         </div>
-        <div className="text-[1.2vw] text-justify text-[#2B4F60] ">
+        <div className="text-[1.2vw] text-justify text-[#2B4F60] p-2 ">
           <p>
             The project aims to create an open-source database that links all
             institutions, laboratories, and researchers engaged in the study of
@@ -33,8 +33,8 @@ const Methodology = () => {
           </p>
         </div>
       </div>
-      <div className="flex col-span-4 justify-center text-center h-screen mt-14 mb-6">
-        <img className="w-[40vw] h-[80vh]" src={img} alt="image description" />
+      <div className="flex col-span-4 justify-center text-center p-0">
+        <img className="w-[40vw] h-[80vh] mt-16" src={img} alt="image description" />
       </div>
     </div>
   );
