@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .art {
   /* 1 pixel black shadow to left, top, right and bottom */

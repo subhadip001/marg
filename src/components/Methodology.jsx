@@ -3,10 +3,12 @@ import img from "../assets/ss.png";
 
 const Methodology = () => {
   return (
-    <div className="bg-white w-full  h-screen mx-auto  grid grid-cols-9  my-auto">
+    <div className="font-['Open_Sans'] bg-white w-full  h-screen mx-auto  grid grid-cols-9  my-auto">
       <div className="h-screen col-span-5 pt-20 pb-12 px-[6rem] bg-[#BDC7C9] flex justify-items-center flex-col">
         <div className="mb-14">
-          <h1 className="text-[2.5vw] font-bold text-[#845460]">OUR METHODOLOGY</h1>
+          <h1 className="text-[2.5vw] font-bold text-[#845460]">
+            OUR METHODOLOGY
+          </h1>
         </div>
         <div className="text-[1.2vw] text-justify text-[#2B4F60] p-2 ">
           <p>
@@ -34,10 +36,14 @@ const Methodology = () => {
         </div>
       </div>
       <div className="flex col-span-4 justify-center text-center p-0">
-        <img className="w-[40vw] h-[80vh] mt-16" src={img} alt="image description" />
+        <img
+          className="w-[40vw] h-[80vh] mt-16"
+          src={img}
+          alt="image description"
+        />
       </div>
     </div>
   );
-}
+};
 
-export default Methodology
+export default Methodology;
