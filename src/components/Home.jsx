@@ -1,8 +1,12 @@
 import React from "react";
+import background from "../assets/Rectangle 27.jpg";
 
 const Home = () => {
   return (
-    <div className="bg-hbg w-full  h-screen mx-auto flex justify-center text-center flex-col">
+    <div
+      className="w-full bg-cover h-screen mx-auto flex justify-center text-center flex-col"
+      style={{ backgroundImage: 'url("./Rectangle.png")' }}
+    >
       <div className="text-[#EAD3CB] text-2xl">
         Mapping Ancient and Historic Routes using Geo-Spatial Tools
       </div>
@@ -13,6 +17,6 @@ const Home = () => {
         Science & Technology, GOI
       </div>
     </div>
-  )
-}
-export default Home
+  );
+};
+export default Home;

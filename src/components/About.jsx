@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./1(8) 1.jpg";
+import img from "../assets/1(8) 1.jpg";
 const About = () => {
   return (
     <div className="bg-white w-full  h-screen mx-auto  grid grid-cols-2  my-auto">
