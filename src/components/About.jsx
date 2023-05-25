@@ -2,19 +2,19 @@ import React from "react";
 import img from "../assets/1(8) 1.jpg";
 const About = () => {
   return (
-    <div className="bg-white w-full  h-screen mx-auto  grid grid-cols-2  my-auto">
-      <div className="flex justify-items-center justify-center pt-8 px-[6 rem] h-screen ">
+    <div className="bg-white w-full text-white h-screen mx-auto  grid grid-cols-2  my-auto">
+      <div className="flex justify-items-center justify-center pt-12 px-[6 rem] h-screen ">
         <img
-          className="w-[25.563rem] h-[37.75rem]"
+          className="w-[31vw] h-[80vh]"
           src={img}
           alt="image description"
         />
       </div>
-      <div className="h-screen pt-[2rem] pb-6 px-[6rem] bg-[#2B4F60]">
-        <div className="mb-[2rem] mt-[1.5rem] ">
-          <h1 className="text-3xl font-bold">About Us</h1>
+      <div className="h-screen pt-[4vh] pb-[7vh] px-[7vw] bg-[#2B4F60]">
+        <div className="mb-6 mt-12 ">
+          <h1 className="text-[4.2vh] font-bold">About Us</h1>
         </div>
-        <div className="text-base text-justify ">
+        <div className="text-[2.2vh] text-justify mt-12 ">
           <p>
             "A heritage route is composed of tangible elements of which the
             cultural significance comes from exchanges and a multi-dimensional
@@ -43,7 +43,7 @@ const About = () => {
           </p>
           <br />
           <a href="http://">
-            <button className="bg-[#845460] hover:bg-[#845460]-700 text-white font-bold py-2 px-4 rounded">
+            <button className="text-[2.3vh] bg-[#845460] hover:bg-[#845460]-700 text-white font-bold mt-6 py-2 px-4 rounded">
               THE MARK PROJECT &gt;
             </button>
           </a>

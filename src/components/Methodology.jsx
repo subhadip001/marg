@@ -1,13 +1,14 @@
 import React from "react";
+import img from "../assets/ss.png";
 
 const Methodology = () => {
   return (
-    <div className="bg-white w-full  h-screen mx-auto  grid grid-cols-2  my-auto">
-      <div className="h-screen pt-20 pb-12 px-[6rem] bg-[#BDC7C9] flex justify-items-center flex-col">
+    <div className="bg-white w-full  h-screen mx-auto  grid grid-cols-9  my-auto">
+      <div className="h-screen col-span-5 pt-20 pb-12 px-[6rem] bg-[#BDC7C9] flex justify-items-center flex-col">
         <div className="mb-14">
-          <h1 className="text-3xl font-bold text-[#845460]">OUR METHODOLOGY</h1>
+          <h1 className="text-[2.5vw] font-bold text-[#845460]">OUR METHODOLOGY</h1>
         </div>
-        <div className="text-base text-justify text-[#2B4F60] ">
+        <div className="text-[1.2vw] text-justify text-[#2B4F60] ">
           <p>
             The project aims to create an open-source database that links all
             institutions, laboratories, and researchers engaged in the study of
@@ -32,7 +33,9 @@ const Methodology = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center text-center h-screen"></div>
+      <div className="flex col-span-4 justify-center text-center h-screen mt-14 mb-6">
+        <img className="w-[40vw] h-[80vh]" src={img} alt="image description" />
+      </div>
     </div>
   );
 }

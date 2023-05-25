@@ -6,7 +6,7 @@ import img6 from "./image 6.png";
 
 function Classification() {
   return (
-    <div className="bg-[#BDC7C9] h-screen w-full mx-auto pl-16 py-12  flex flex-col justify-center justify-items-center">
+    <div className="bg-[#BDC7C9] h-screen w-full mx-auto pl-16 py-12  flex flex-col justify-center justify-items-center items-center">
       <div className="h-screen w-full grid grid-cols-3 mt-8">
         <Card
           url={img4}
