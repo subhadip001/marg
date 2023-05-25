@@ -6,7 +6,7 @@ import img3 from "./image 3.png";
 
 function Classification() {
   return (
-    <div className="h-screen w-full  flex flex-col justify-center justify-items-center p-[7%]">
+    <div className="font-['Open_Sans'] h-screen w-full  flex flex-col justify-center justify-items-center p-[7%]">
       <div className="text-[#845460] text-[200%] font-bold mb-[1%]">
         CLASSIFICATION OF HISTORIC ROADS / ROUTES
       </div>

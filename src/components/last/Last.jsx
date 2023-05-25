@@ -6,8 +6,8 @@ import img6 from "./image 6.png";
 
 function Classification() {
   return (
-    <div className="bg-[#BDC7C9] h-screen w-full pl-[3%] pr-[3%]  flex flex-col justify-center justify-items-center items-center">
-      <div className="grid grid-cols-3 gap-[2%] ">
+    <div className="bg-[#BDC7C9] font-['Open_Sans'] h-screen w-full pl-[4vw] pt-[16vh] pb-[25vh] pr-[6vw]  flex flex-col justify-center justify-items-center items-center">
+      <div className="grid grid-cols-3 gap-[6vw] ">
         <div>
           <Card
             url={img4}

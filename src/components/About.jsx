@@ -12,9 +12,9 @@ const About = () => {
       </div>
       <div className="h-screen pt-[4vh] pb-[7vh] px-[7vw] bg-[#2B4F60]">
         <div className="mb-6 mt-12 ">
-          <h1 className="text-[4.2vh] font-bold">About Us</h1>
+          <h1 className="text-[2.5vw] font-bold">ABOUT US</h1>
         </div>
-        <div className="text-[2.2vh] text-justify mt-12 ">
+        <div className="text-[1vw] text-justify mt-12 ">
           <p>
             "A heritage route is composed of tangible elements of which the
             cultural significance comes from exchanges and a multi-dimensional
@@ -43,7 +43,7 @@ const About = () => {
           </p>
           <br />
           <a href="http://">
-            <button className="text-[2.3vh] bg-[#845460] hover:bg-[#845460]-700 text-white font-bold mt-6 py-2 px-4 rounded">
+            <button className="text-[2.3vh] bg-[#845460] hover:bg-[#845460]-700 text-white mt-6 py-2 px-4 rounded">
               THE MARK PROJECT &gt;
             </button>
           </a>

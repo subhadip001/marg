@@ -2,7 +2,7 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div class=" max-w-full w-full rounded overflow-hidden shadow-lg">
+    <div class="font-['Open_Sans'] max-w-full w-full rounded overflow-hidden shadow-lg">
       <img class="w-full" src={props.url} alt="Sunset in the mountains" />
       <div class="px-[5%] py-[3%]">
         <div class="text-[#845460] font-bold text-[120%] mb-[2%]">
