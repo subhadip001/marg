@@ -6,9 +6,9 @@ import img6 from "./image 6.png";
 
 function Classification() {
   return (
-    <div className="bg-[#BDC7C9] font-['Open_Sans'] h-screen w-full pl-[4vw] pt-[16vh] pb-[25vh] pr-[6vw]  flex flex-col justify-center justify-items-center items-center">
-      <div className="grid grid-cols-3 gap-[6vw] ">
-        <div>
+    <div className="bg-[#BDC7C9] font-['Open_Sans'] h-screen w-full pl-[4vw] pt-[9%] pb-[12%] pr-[6vw]  flex flex-col justify-center justify-items-center items-center">
+      <div className="grid grid-cols-3 gap-[6vw] 2xl:gap-[3%]  ">
+        <div className="w-fit">
           <Card
             url={img4}
             topLeft="LANDSCAPE"
@@ -16,7 +16,7 @@ function Classification() {
             text="The core objective of our project is to promote and preserve the cultural and heritage roots of the Indian Subcontinent."
           ></Card>
         </div>
-        <div>
+        <div className="w-fit">
           <Card
             url={img5}
             topLeft="NODAL INSTITUTION"
@@ -24,7 +24,7 @@ function Classification() {
             text="The core objective of our project is to promote and preserve the cultural and heritage roots of the Indian Subcontinent."
           ></Card>
         </div>
-        <div>
+        <div className="w-fit">
           <Card
             url={img6}
             topLeft="INTANGIBLE HERITAGE"
