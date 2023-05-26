@@ -3,12 +3,12 @@ import img from "../assets/1(8) 1.jpg";
 const About = () => {
   return (
     <div className="bg-white w-full text-white h-screen mx-auto  grid grid-cols-9  my-auto">
-      <div className="justify-center justify-items-center col-span-4 items-center flex-col place-content-center text-center flex h-screen ">
+      <div className="justify-center justify-items-center col-span-4 items-center flex-col place-content-center text-center flex h-full ">
         <img className="w-[31vw] h-[82vh]" src={img} alt="image description" />
       </div>
-      <div className="h-screen flex flex-col pb-[3vh] justify-center justify-items-center place-content-center col-span-5 px-[7vw] bg-[#2B4F60]">
+      <div className="h-full flex flex-col pb-[3vh] justify-center justify-items-center place-content-center col-span-5 px-[7vw] bg-[#2B4F60]">
         <div className="mb-[6vh]">
-          <h1 className="text-[2.4vw] font-semibold">ABOUT US</h1>
+          <h1 className="text-[calc(1.5vw+0.5rem)] font-semibold">ABOUT US</h1>
         </div>
         <div className="text-[1.1vw] text-[#BDC7C9] font-light capitalize text-justify">
           <p>
