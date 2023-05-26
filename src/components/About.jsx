@@ -4,11 +4,7 @@ const About = () => {
   return (
     <div className="bg-white w-full text-white h-screen mx-auto  grid grid-cols-2  my-auto">
       <div className="flex justify-items-center justify-center pt-12 px-[6 rem] h-screen ">
-        <img
-          className="w-[31vw] h-[80vh]"
-          src={img}
-          alt="image description"
-        />
+        <img className="w-[31vw] h-[80vh]" src={img} alt="image description" />
       </div>
       <div className="h-screen pt-[4vh] pb-[7vh] px-[7vw] bg-[#2B4F60]">
         <div className="mb-6 mt-12 ">
@@ -19,8 +15,8 @@ const About = () => {
             "A heritage route is composed of tangible elements of which the
             cultural significance comes from exchanges and a multi-dimensional
             dialogue across countries or regions, and that illustrate the
-            interaction of movement, along the route, in space and time" UNESCO,
-            1994.
+            interaction of movement, along the route, in space and time"
+            &#40;UNESCO, 1994&#41;.
           </p>
           <br />
           <p>
@@ -39,7 +35,8 @@ const About = () => {
             evaluating Nomadic and transhumance routes, Indigenous routes that
             exhibit agricultural expansion, routes based on Indigenous oral
             knowledge networks, routes that reflect Indigenous or maritime
-            trading systems, and other similar routes. Srichandan et al.,2021
+            trading systems, and other similar routes. &#40;Srichandan et
+            al.,2021&#41;.
           </p>
           <br />
           <a href="http://">

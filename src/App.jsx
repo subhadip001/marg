@@ -16,7 +16,7 @@ function App() {
       <Classification></Classification>
       <Last></Last>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
