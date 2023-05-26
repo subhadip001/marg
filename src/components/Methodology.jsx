@@ -4,13 +4,13 @@ import img from "../assets/ss.png";
 const Methodology = () => {
   return (
     <div className="font-['Open_Sans'] bg-white w-full  h-screen mx-auto  grid grid-cols-9  my-auto">
-      <div className="h-screen col-span-5 pt-20 pb-12 px-[6rem] bg-[#BDC7C9] flex justify-items-center flex-col">
-        <div className="mb-14">
-          <h1 className="text-[2.5vw] font-bold text-[#845460]">
+      <div className="h-screen col-span-5 place-content-center px-[4rem] 2xl:px-[5rem] bg-[#BDC7C9] flex justify-items-center flex-col">
+        <div className="mb-[6%] 2xl:mb-[7%]">
+          <h1 className="text-[2.4vw] font-bold text-[#845460] 2xl:text-[3vw] ">
             OUR METHODOLOGY
           </h1>
         </div>
-        <div className="text-[1.2vw] text-justify text-[#2B4F60] p-2 ">
+        <div className="text-[1.2vw] 2xl:text-[1.3vw] capitalize text-justify font-normal text-[#2B4F60] text-400 ">
           <p>
             The project aims to create an open-source database that links all
             institutions, laboratories, and researchers engaged in the study of
@@ -35,9 +35,9 @@ const Methodology = () => {
           </p>
         </div>
       </div>
-      <div className="flex col-span-4 justify-center text-center p-0">
+      <div className="flex col-span-4 justify-center justify-items-center items-center flex-col place-content-center text-center p-0">
         <img
-          className="w-[40vw] h-[80vh] mt-16"
+          className="w-fit h-[83vh] "
           src={img}
           alt="image description"
         />

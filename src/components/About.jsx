@@ -2,15 +2,15 @@ import React from "react";
 import img from "../assets/1(8) 1.jpg";
 const About = () => {
   return (
-    <div className="bg-white w-full text-white h-screen mx-auto  grid grid-cols-2  my-auto">
-      <div className="flex justify-items-center justify-center pt-12 px-[6 rem] h-screen ">
-        <img className="w-[31vw] h-[80vh]" src={img} alt="image description" />
+    <div className="bg-white w-full text-white h-screen mx-auto  grid grid-cols-9  my-auto">
+      <div className="justify-center justify-items-center col-span-4 items-center flex-col place-content-center text-center flex h-screen ">
+        <img className="w-[31vw] h-[82vh]" src={img} alt="image description" />
       </div>
-      <div className="h-screen pt-[4vh] pb-[7vh] px-[7vw] bg-[#2B4F60]">
-        <div className="mb-6 mt-12 ">
-          <h1 className="text-[2.5vw] font-bold">ABOUT US</h1>
+      <div className="h-screen flex flex-col pb-[3vh] justify-center justify-items-center place-content-center col-span-5 px-[7vw] bg-[#2B4F60]">
+        <div className="mb-[6vh]">
+          <h1 className="text-[2.4vw] font-semibold">ABOUT US</h1>
         </div>
-        <div className="text-[1vw] text-justify mt-12 ">
+        <div className="text-[1.1vw] text-[#BDC7C9] font-light capitalize text-justify">
           <p>
             "A heritage route is composed of tangible elements of which the
             cultural significance comes from exchanges and a multi-dimensional
@@ -40,8 +40,8 @@ const About = () => {
           </p>
           <br />
           <a href="http://">
-            <button className="text-[2.3vh] bg-[#845460] hover:bg-[#845460]-700 text-white mt-6 py-2 px-4 rounded">
-              THE MARK PROJECT &gt;
+            <button className="text-[3vh] w-fit bg-[#845460] hover:bg-[#845460]-700 text-white mt-6 py-2 px-4 rounded">
+              THE MARG PROJECT &gt;
             </button>
           </a>
         </div>

@@ -4,7 +4,7 @@ import "../App.css";
 const Navbar = () => {
   return (
     <nav>
-      <div className="font-['Open_Sans'] bg-bb border-bb-200 bg-bb-900 max-w-full w-full flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="font-['Open_Sans'] bg-bb border-bb-200 bg-bb-900 max-w-full w-full  flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" className="flex items-center">
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-list">
             MARG- Historic Roads
