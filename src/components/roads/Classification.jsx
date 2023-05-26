@@ -6,11 +6,11 @@ import img3 from "./image 3.png";
 
 function Classification() {
   return (
-    <div className="font-['Open_Sans'] h-screen w-full  flex flex-col justify-center justify-items-center pl-[3.8%] pt-[5.1%] pb-[6.3%] pr-[6.1%] gap-14">
-      <div className="text-[#845460] text-[calc(1.5vw+0.5rem)] font-bold ml-[1.5rem]">
+    <div className="font-['Open_Sans'] h-screen w-full  flex flex-col justify-center justify-items-center pl-[4.8%] pt-[5.1%] pb-[6.3%] pr-[5.1%] gap-14">
+      <div className="text-[#845460] text-[calc(1.5vw+0.5rem)] font-bold">
         CLASSIFICATION OF HISTORIC ROADS / ROUTES
       </div>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-[3vw]">
         <Card
           url={img1}
           title="LAND ROUTES"
