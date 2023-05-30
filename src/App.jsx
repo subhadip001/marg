@@ -1,20 +1,24 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Methodology from "./components/Methodology";
-import Classification from "./components/roads/Classification";
-import Last from "./components/last/Last";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Explore from "./pages/Explore";
+import Identification from "./pages/Identification";
+
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <Home></Home>
-      <About></About>
-      <Methodology></Methodology>
-      <Classification></Classification>
-      <Last></Last>
+      <Router>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/identification&development" element={<Identification />} />
+          <Route path="/explore" element={<Explore />} />
+        </Routes>
+      </Router>
     </>
   );
 }

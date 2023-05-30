@@ -1,16 +1,17 @@
 import React from "react";
-import img from "../assets/1(8) 1.jpg";
+import Basic from "/src/components/Basic";
+import img1 from "/src/assets/7.png";
+import img2 from "/src/assets/3.png";
+
+
+
 const About = () => {
+  const arr = ["THE MARG","ICOMOS Charter on Cultural Routes"];
   return (
-    <div className="bg-white w-full text-white h-screen mx-auto  grid grid-cols-9  my-auto">
-      <div className="justify-center justify-items-center col-span-4 items-center flex-col place-content-center text-center flex h-full ">
-        <img className="w-[31vw] h-[82vh]" src={img} alt="image description" />
-      </div>
-      <div className="h-full flex flex-col pb-[3vh] justify-center justify-items-center place-content-center col-span-5 px-[7vw] bg-[#2B4F60]">
-        <div className="mb-[6vh]">
-          <h1 className="text-[calc(1.5vw+0.5rem)] font-semibold">ABOUT US</h1>
-        </div>
-        <div className="text-[1.1vw] text-[#BDC7C9] font-light capitalize text-justify">
+    <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
+      <Basic title="ABOUT" numbers={arr}></Basic>
+      <div className="grid grid-cols-7 w-full h-fit gap-56 mb-60">
+        <div className=" text-[#2B4F60] text-100 font-normal text-[100%]  pl-8 col-span-3 text-justify  flex flex-col ">
           <p>
             "A heritage route is composed of tangible elements of which the
             cultural significance comes from exchanges and a multi-dimensional
@@ -38,16 +39,13 @@ const About = () => {
             trading systems, and other similar routes. &#40;Srichandan et
             al.,2021&#41;.
           </p>
-          <br />
-          <a href="http://">
-            <button className="text-[3vh] w-fit bg-[#845460] hover:bg-[#845460]-700 text-white mt-6 py-2 px-4 rounded">
-              THE MARG PROJECT &gt;
-            </button>
-          </a>
+        </div>
+        <div className="col-span-4 flex flex-col gap-2  ">
+          <img className="w-[70%] h-1/2" src={img1} alt="image description" />
+          <img className="w-[70%] h-1/2" src={img2} alt="image description" />
         </div>
       </div>
     </div>
   );
 };
-
 export default About;

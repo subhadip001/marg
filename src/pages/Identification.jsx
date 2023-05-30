@@ -1,16 +1,24 @@
 import React from "react";
-import img from "../assets/ss.png";
+import Basic from "/src/components/Basic";
+import img from "/src/assets/ss.png";
 
-const Methodology = () => {
+const Identification = () => {
+  const arr = [
+    "Our Methodology",
+    "Classification of Historic Roads",
+    "Bhotiya Trade Routes",
+    "Routes at risk",
+  ];
   return (
-    <div className="font-['Open_Sans'] bg-white w-full  h-screen mx-auto  grid grid-cols-9  my-auto">
-      <div className="h-screen col-span-5 place-content-center px-[4rem] bg-[#BDC7C9] flex justify-items-center flex-col">
-        <div className="mb-[6%]">
-          <h1 className="text-[calc(1.5vw+0.5rem)] font-bold text-[#845460]">
-            OUR METHODOLOGY
-          </h1>
-        </div>
-        <div className="text-[1.2vw] capitalize text-justify font-normal text-[#2B4F60] text-400 ">
+    <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
+      <Basic
+        title="IDENTIFICATION & DOCUMENTATION"
+        numbers={arr}
+    
+      ></Basic>
+
+      <div className="grid grid-cols-7 w-full h-fit gap-56 mb-60">
+        <div className=" text-[#2B4F60] text-100 font-normal text-[100%]  pl-8 col-span-3 text-justify  flex flex-col ">
           <p>
             The project aims to create an open-source database that links all
             institutions, laboratories, and researchers engaged in the study of
@@ -34,12 +42,11 @@ const Methodology = () => {
             multifaceted cultural heritage.
           </p>
         </div>
-      </div>
-      <div className="flex col-span-4 justify-center justify-items-center items-center flex-col place-content-center text-center p-0">
-        <img className="w-fit h-[83vh] " src={img} alt="image description" />
+        <div className="col-span-4 flex flex-col gap-2  ">
+          <img className="w-[80%] h-full" src={img} alt="image description" />
+        </div>
       </div>
     </div>
   );
 };
-
-export default Methodology;
+export default Identification;

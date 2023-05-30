@@ -4,16 +4,16 @@ import "../App.css";
 const Navbar = () => {
   return (
     <nav>
-      <div className="font-['Open_Sans'] bg-bb border-bb-200 bg-bb-900 max-w-full w-full  flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="" className="flex items-center">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-list">
+      <div className="font-['Open_Sans'] bg-bb  max-w-full h-24 w-full  flex flex-wrap items-center justify-between mx-auto p-8">
+        <a href="/" className="flex items-center">
+          <span className="self-center text-[calc(1.4vw+0.5rem)] font-semibold whitespace-nowrap text-white">
             MARG- Historic Roads
           </span>
         </a>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200  hover:bg-gray-700"
+          class="inline-flex items-center p-2 ml-3 text-sm text-white-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -37,8 +37,8 @@ const Navbar = () => {
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-bb rounded-lg bg-bb md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-bb">
             <li>
               <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-list bg-blue-700 rounded md:bg-transparent md:text-list md:hover:text-blue-700 md:p-0"
+                href="/about"
+                className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
                 aria-current="page"
               >
                 About
@@ -46,16 +46,16 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 pl-3 pr-4  rounded hover:bg-bb md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-list hover:bg-bb-700 hover:text-list"
+                href="/explore"
+                className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Explore
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-bb-900 rounded hover:bg-bb-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-list hover:bg-bb-700 hover:text-list"
+                href="/identification&development"
+                className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Identification & Development
               </a>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-bb-900 rounded hover:bg-bb-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-list hover:bg-bb-700 hover:text-list"
+                className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Conservation
               </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-bb-900 rounded hover:bg-bb-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-list hover:bg-bb-700 hover:text-list"
+                className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Management
               </a>
@@ -79,7 +79,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-bb-900 rounded hover:bg-bb-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-list hover:bg-bb-700 hover:text-list"
+                className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 The MARG Network
               </a>
