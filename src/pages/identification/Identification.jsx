@@ -4,21 +4,18 @@ import img from "/src/assets/ss.png";
 
 const Identification = () => {
   const arr = [
-    "Our Methodology",
-    "Classification of Historic Roads",
-    "Bhotiya Trade Routes",
-    "Routes at risk",
+    { name: "Our Methodology", link: "/identification&development/methodology" },
+    { name: "Classification of Historic Roads", link: "/identification&development/historicroads" },
+    { name: "Bhotiya Trade Routes", link: "/identification&development/traderoutes" },
+    { name: "Routes at risk", link: "/identification&development/routesatrisk" },
+
   ];
   return (
-    <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
-      <Basic
-        title="IDENTIFICATION & DOCUMENTATION"
-        numbers={arr}
-    
-      ></Basic>
+    <div className="font-['Open_Sans'] flex flex-wrap gap-16 items-center justify-center place-content-center">
+      <Basic title="IDENTIFICATION & DOCUMENTATION" numbers={arr}></Basic>
 
-      <div className="grid grid-cols-7 w-full h-fit gap-56 mb-60">
-        <div className=" text-[#2B4F60] text-100 font-normal text-[100%]  pl-8 col-span-3 text-justify  flex flex-col ">
+      <div className="grid grid-cols-7 w-[85%] mx-auto h-fit gap-20 mb-60">
+        <div className=" text-[#2B4F60] text-100 font-normal text-[100%]  col-span-3 text-justify  flex flex-col ">
           <p>
             The project aims to create an open-source database that links all
             institutions, laboratories, and researchers engaged in the study of
@@ -43,7 +40,7 @@ const Identification = () => {
           </p>
         </div>
         <div className="col-span-4 flex flex-col gap-2  ">
-          <img className="w-[80%] h-full" src={img} alt="image description" />
+          <img className="w-[100%] h-full" src={img} alt="image description" />
         </div>
       </div>
     </div>

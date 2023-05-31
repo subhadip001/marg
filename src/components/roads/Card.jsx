@@ -2,10 +2,10 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div class="font-['Open_Sans'] w-[90%] h-fit overflow-hidden">
+    <div class="font-['Open_Sans'] w-[100%] h-fit overflow-hidden">
       <img class="w-full" src={props.url} alt="Sunset in the mountains" />
-      <div class="py-[3%]">
-        <div class="text-[#845460] font-bold text-[120%] mb-[2%]">
+      <div class="py-[5%]">
+        <div class="text-[#845460] font-bold text-[140%] mb-[4%]">
           {props.title}
         </div>
         <p class="text-gray-700 text-justify text-[100%]">{props.text}</p>

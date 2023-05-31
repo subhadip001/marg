@@ -37,7 +37,7 @@ const Navbar = () => {
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-bb rounded-lg bg-bb md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-bb">
             <li>
               <a
-                href="/about"
+                href="/about/themarg"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
                 aria-current="page"
               >
@@ -46,7 +46,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/explore"
+                href="/explore/historicroutes"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Explore
@@ -54,7 +54,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="/identification&development"
+                href="/identification&development/methodology"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Identification & Development
@@ -62,7 +62,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/conservation/preservation"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Conservation
@@ -70,7 +70,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/management/safety"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Management
@@ -78,7 +78,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/themargnetwork/newinstitutionuser"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 The MARG Network

@@ -10,7 +10,7 @@ function Card(props) {
         </h3>
       </div>
 
-      <div className=" mb-[15%] ml-[7.5%] mr-[12%] text-justify mt-[2%] ">
+      <div className=" mb-[15%] ml-[7.5%] mr-[12%] text-justify mt-[4%] ">
         <div className="text-[#845460] font-semibold text-[1.4vw]  mb-[3%] text-center">
           {props.title}
         </div>

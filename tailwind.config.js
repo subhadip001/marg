@@ -9,6 +9,7 @@ export default {
         hbg: "#1E1E1E54",
         mapping: "#EAD3CB",
       },
+      
     },
   },
   plugins: [],

@@ -6,8 +6,8 @@ import img6 from "./image 6.png";
 
 function Last() {
   return (
-    <div className="bg-[#BDC7C9] font-['Open_Sans'] h-screen w-full flex flex-col justify-center place-content-center justify-items-center items-center pl-[4.8%] pr-[5.1%]">
-      <div className="grid grid-cols-3 gap-[3vw]">
+    <div className="bg-[#BDC7C9] font-['Open_Sans'] h-screen w-full flex flex-col justify-center place-content-center justify-items-center items-center pb-8 pl-[4.8%] pr-[5.1%]">
+      <div className="grid grid-cols-3 gap-[3vw] ">
         <Card
           url={img4}
           topLeft="LANDSCAPE"
