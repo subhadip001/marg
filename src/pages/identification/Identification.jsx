@@ -14,7 +14,7 @@ const Identification = () => {
     <div className="font-['Open_Sans'] flex flex-wrap gap-16 items-center justify-center place-content-center">
       <Basic title="IDENTIFICATION & DOCUMENTATION" numbers={arr}></Basic>
 
-      <div className="grid grid-cols-7 w-[85%] mx-auto h-fit gap-20 mb-60">
+      <div className="grid grid-cols-7 w-[85%] mx-auto h-fit gap-20 mb-16">
         <div className=" text-[#2B4F60] text-100 font-normal text-[100%]  col-span-3 text-justify  flex flex-col ">
           <p>
             The project aims to create an open-source database that links all

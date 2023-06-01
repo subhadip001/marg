@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <div
-        className=" font-['Open_Sans'] pb-64 home w-full bg-center bg-cover h-screen m-0 flex justify-center text-center flex-col items-center pt-28 pl-32 "
+        className="font-['Open_Sans'] pb-64 home w-full bg-center bg-cover h-screen m-0 flex justify-center text-center flex-col items-center pt-28 pl-32 "
         style={{
           backgroundImage: `url(${background})`,
           backgroundRepeat: "no-repeat",
