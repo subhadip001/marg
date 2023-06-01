@@ -27,7 +27,7 @@ function Classification() {
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-16 items-center justify-center place-content-center">
       <Basic title="IDENTIFICATION & DOCUMENTATION" numbers={arr}></Basic>
-        <div className=" font-['Open_Sans'] h-screen  w-[85%] mx-auto grid grid-cols-3 gap-[3vw]">
+        <div className=" font-['Open_Sans'] h-full mb-36  w-[85%] mx-auto grid grid-cols-3 gap-[3vw]">
           <Card
             url={img1}
             title="LAND ROUTES"

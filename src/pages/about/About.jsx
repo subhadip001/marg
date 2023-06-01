@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
       <Basic title="ABOUT" numbers={arr}></Basic>
-      <div className="grid grid-cols-11 w-[85%] mx-auto h-fit gap-20 ">
+      <div className="grid grid-cols-11 w-[85%] mx-auto h-full mb-20 gap-20 ">
         <div className=" text-[#2B4F60] text-100 font-normal col-span-5 text-justify  flex flex-col ">
           <p>
             MARG stands for “Mapping Ancient and Historic Routes using

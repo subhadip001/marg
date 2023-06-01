@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/landingPage/Footer";
 import Home from "./pages/Home";
 
 import About from "./pages/about/About";
@@ -31,91 +32,141 @@ import Rehabilitation from "./pages/conservation/Rehabilitation";
 import Restoration from "./pages/conservation/Restoration";
 
 function App() {
+  const Layout = () => {
+    return (
+      <div>
+        <Navbar />
+        <Outlet />
+      </div>
+    );
+  };
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+
+        {
+          path: "about",
+          children: [
+            {
+              path: "themarg",
+              element: <About />,
+            },
+            {
+              path: "icomoscharter",
+              element: <Charter />,
+            },
+          ],
+        },
+        {
+          path: "explore",
+          children: [
+            {
+              path: "culturalroutes",
+              element: <CulturalRoutes />,
+            },
+            {
+              path: "historicroutes",
+              element: <Explore />,
+            },
+          ],
+        },
+        {
+          path: "identification&development",
+          children: [
+            {
+              path: "methodology",
+              element: <Identification />,
+            },
+            {
+              path: "historicroads",
+              element: <Classification />,
+            },
+            {
+              path: "traderoutes",
+              element: <Trade />,
+            },
+            {
+              path: "routesatrisk",
+              element: <Risk />,
+            },
+          ],
+        },
+        {
+          path: "management",
+          children: [
+            {
+              path: "safety",
+              element: <Safety />,
+            },
+            {
+              path: "liability",
+              element: <Liability />,
+            },
+            {
+              path: "policy",
+              element: <Policy />,
+            },
+            {
+              path: "heritagebylaws",
+              element: <Heritage />,
+            },
+            {
+              path: "keystakeholders",
+              element: <Stakeholders />,
+            },
+          ],
+        },
+        {
+          path: "conservation",
+          children: [
+            {
+              path: "preservation",
+              element: <Preservation />,
+            },
+            {
+              path: "rehabilitation",
+              element: <Rehabilitation />,
+            },
+            {
+              path: "restoration",
+              element: <Restoration />,
+            },
+            {
+              path: "reconstruction",
+              element: <Reconstruction />,
+            },
+          ],
+        },
+        {
+          path: "themargnetwork",
+          children: [
+            {
+              path: "newinstitutionuser",
+              element: <NewUser />,
+            },
+            {
+              path: "associatedinstitutions",
+              element: <Research />,
+            },
+            {
+              path: "networkcontributions",
+              element: <Contributions />,
+            },
+          ],
+        },
+      ],
+    },
+  ]);
   return (
     <>
-      <BrowserRouter>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path="/" element={<Home />} />
-
-          {/* <Route element={<About />} /> */}
-          <Route path="/about">
-            {/* <Route index={true} element={<Explore />} /> */}
-            <Route index={false} path="themarg" element={<About />} />
-            <Route index={false} path="icomoscharter" element={<Charter />} />
-          </Route>
-
-          <Route path="/identification&development">
-            {/* <Route index={true} element={<Identification />} /> */}
-            <Route path="methodology" element={<Identification />} />
-            <Route path="historicroads" element={<Classification />}></Route>
-            <Route path="traderoutes" element={<Trade />} />
-            <Route path="routesatrisk" element={<Risk />} />
-          </Route>
-
-          <Route path="/explore">
-            {/* <Route index={true} element={<Explore />} /> */}
-            <Route index={false} path="historicroutes" element={<Explore />} />
-            <Route
-              index={false}
-              path="culturalroutes"
-              element={<CulturalRoutes />}
-            />
-          </Route>
-
-          <Route path="/conservation">
-            {/* <Route index={true} element={<Explore />} /> */}
-            <Route
-              index={false}
-              path="preservation"
-              element={<Preservation />}
-            />
-            <Route
-              index={false}
-              path="rehabilitation"
-              element={<Rehabilitation />}
-            />
-            <Route
-              index={false}
-              path="restoration"
-              element={<Reconstruction />}
-            />
-            <Route index={false} path="reconstruction" element={<Restoration />} />
-          </Route>
-
-          <Route path="/management">
-            {/* <Route index={true} element={<Safety />} /> */}
-            <Route index={false} path="safety" element={<Safety />} />
-            <Route index={false} path="liability" element={<Liability />} />
-            <Route index={false} path="policy" element={<Policy />} />
-            <Route index={false} path="heritagebylaws" element={<Heritage />} />
-            <Route
-              index={false}
-              path="keystakeholders"
-              element={<Stakeholders />}
-            />
-          </Route>
-
-          <Route path="/themargnetwork">
-            {/* <Route index={true} element={<Explore />} /> */}
-            <Route
-              index={false}
-              path="newinstitutionuser"
-              element={<NewUser />}
-            />
-            <Route
-              index={false}
-              path="associatedinstitutions"
-              element={<Research />}
-            />
-            <Route
-              index={false}
-              path="networkcontributions"
-              element={<Contributions />}
-            />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </>
   );
 }
