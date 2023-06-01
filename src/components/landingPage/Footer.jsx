@@ -1,17 +1,12 @@
 import React from "react";
-import img from "/src/assets/footerimg.png";
+import img from "/src/assets/logo.png";
 
 export default function Footer() {
   return (
-    <div className="grid grid-cols-2 w-[95%] ml-8 mr-16 mt-16 mb-20 h-[65vh] gap-60">
-      <div className="flex flex-wrap flex-col gap-40">
-        <div className="relative top-28">
-          <h1 className="marg tracking-wide	 absolute text-[10rem] p-0 text-blue-300 top-0 -translate-y-36 left-8">
-            MARG
-          </h1>
-          <img src={img} alt="" className="" />
-        </div>
-        <div className="pl-8 font-['Open_Sans'] text-[#000000] ">
+    <div className="grid grid-cols-2 w-[90%] mx-auto mt-16  h-[70vh] gap-60">
+      <div className="flex flex-wrap flex-col gap-8 font-['Open_Sans'] text-[#000000]">
+        <img src={img} alt="" className="" />
+        <div className="  ">
           <h1 className="font-semibold text-xl ">ADDRESS:</h1>
           <p className="text-justify">
             Civic Design Lab, Department of Architecture & Planning
