@@ -1,15 +1,15 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
       <div className="font-['Open_Sans'] bg-bb  max-w-full h-24 w-full  flex flex-wrap items-center justify-between mx-auto p-8">
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <span className="self-center text-[calc(1.4vw+0.5rem)] font-semibold whitespace-nowrap text-white">
             MARG- Historic Roads
           </span>
-        </a>
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -36,58 +36,57 @@ const Navbar = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-bb rounded-lg bg-bb md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-bb">
             <li>
-              <a
-                href="/about/themarg"
+              <Link
+                to="/about/themarg"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
                 aria-current="page"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/explore/historicroutes"
+              <Link
+                to="/explore/historicroutes"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Explore
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/identification&development/methodology"
+              <Link
+                to="/identification&development/methodology"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Identification & Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/conservation/preservation"
+              <Link
+                to="/conservation/preservation"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Conservation
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/management/safety"
-                className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
+              <Link
+                to="/management/safety"
+                className="block py-2 pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 Management
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/themargnetwork/newinstitutionuser"
+              <Link
+                to="/themargnetwork/newinstitutionuser"
                 className="block py-2 pl-3 pr-4  rounded md:hover:bg-transparent md:border-0 md:p-0 text-white hover:bg-bb-700 hover:text-white"
               >
                 The MARG Network
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
   );
 };
 export default Navbar;
