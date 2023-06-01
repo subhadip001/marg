@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "/src/assets/1(8) 1.jpg";
 const CulturalRoutes = () => {
   return (
@@ -39,11 +40,11 @@ const CulturalRoutes = () => {
             al.,2021&#41;.
           </p>
           <br />
-          <a href="http://">
+          <Link to="#">
             <button className="text-[3vh] w-fit bg-[#845460] hover:bg-[#845460]-700 text-white mt-6 py-2 px-4 rounded">
               THE MARG PROJECT &gt;
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
