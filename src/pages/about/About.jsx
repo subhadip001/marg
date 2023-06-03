@@ -1,16 +1,44 @@
 import React from "react";
-import Basic from "/src/components/Basic";
-import img1 from "/src/assets/7.png";
-import img2 from "/src/assets/3.png";
+import { NavLink } from "react-router-dom";
+
+import img1 from "/src/assets/7.jpg";
+import img2 from "/src/assets/3.jpg";
 
 const About = () => {
-  const arr = [
-    { name: "THE MARG", link: "/about/themarg" },
-    { name: "ICOMOS Charter on Cultural Routes", link: "/about/icomoscharter" },
-  ];
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
-      <Basic title="ABOUT" numbers={arr}></Basic>
+      <div className="bg-[#BDC7C9] w-full h-full pt-16 pb-4 flex flex-col flex-wrap gap-8  font-['Open_Sans'] ">
+        <div className="w-[85%] mx-auto ">
+          <h1 className="text-[calc(1.7vw+0.5rem)] font-bold text-[#845460]">
+            ABOUT
+          </h1>
+        </div>
+        <div className="w-[85%] mx-auto ">
+          <ul class=" flex flex-wrap items-center gap-8 divide-x-2 divide-[#FFFFFF] text-[18px]  ">
+            <li className="h-12 flex items-center pl-8  text-[#2B4F60] first:pl-0 ">
+              <NavLink
+                to="/about/themarg"
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+              >
+                THE MARG
+              </NavLink>
+            </li>
+
+            <li className="h-12 flex items-center pl-8  text-[#2B4F60] first:pl-0 ">
+              <a
+                href="https://www.icomos.org/images/DOCUMENTS/Charters/culturalroutes_e.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ICOMOS Charter on Cultural Routes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="grid grid-cols-11 w-[85%] mx-auto h-full mb-20 gap-20 ">
         <div className=" text-[#2B4F60] text-100 font-normal col-span-5 text-justify  flex flex-col ">
           <p>

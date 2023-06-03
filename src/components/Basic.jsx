@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 
 const Basic = (props) => {

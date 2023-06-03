@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        bb: "#2B4F60",
+        bb: "rgb(var(--color-bg)/0.95)",
         list: "#BDC7C9",
         hbg: "#1E1E1E54",
         mapping: "#EAD3CB",
       },
-      
+    
     },
   },
   plugins: [],
