@@ -6,7 +6,6 @@ import Footer from "./components/landingPage/Footer";
 import Home from "./pages/Home";
 
 import About from "./pages/about/About";
-import Charter from "./pages/about/Charter";
 
 import Explore from "./pages/explore/HistoricRoads";
 import CulturalRoutes from "./pages/explore/CulturalRoutes";
@@ -58,10 +57,7 @@ function App() {
               path: "themarg",
               element: <About />,
             },
-            {
-              path: "icomoscharter",
-              element: <Charter />,
-            },
+            
           ],
         },
         {

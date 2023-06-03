@@ -1,6 +1,6 @@
 import React from "react";
 import img from "/src/assets/logo.png";
-
+import VisitorCounter from "./visitor";
 export default function Footer() {
   return (
     <div className="grid grid-cols-2 w-[90%] mx-auto mt-16  h-[70vh] gap-60">
@@ -15,7 +15,7 @@ export default function Footer() {
           <p>India - 247667</p>
           <br />
           <br />
-          <p className="font-[600]">VISITORS: 56</p>
+          <VisitorCounter/>
         </div>
       </div>
 
@@ -30,14 +30,14 @@ export default function Footer() {
           <textarea
             id="message"
             rows="7"
-            class="block p-2.5 w-[70%] text-sm text-black  border border-black "
+            class="block p-2.5 w-[70%] text-sm placeholder-[#3D3D3D] placeholder:italic  border border-black "
             placeholder="Your message..."
           ></textarea>
 
           <textarea
             id="email"
             rows="1"
-            class="block p-2.5 w-[70%] text-sm text-black   border border-[#000000] "
+            class="block p-2.5 w-[70%] text-sm text-black placeholder:italic placeholder-[#3D3D3D] border border-[#000000] "
             placeholder="Email id"
           ></textarea>
           <button
