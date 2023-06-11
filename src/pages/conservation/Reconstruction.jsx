@@ -12,14 +12,16 @@ const Reconstruction = () => {
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
       <Basic title="CONSERVATION" numbers={arr}></Basic>
-      <div className="mb-12 w-[85%] mx-auto">
-        In the context of heritage conservation, preservation pertains to
-        properties that have been preserved in their largely intact form, and
-        are representative of the period of significance. This includes historic
-        roads/routes and related resources that have maintained their original
-        design and materials in a good state of repair. The preservation
-        approach primarily involves activities and measures that focus on
-        maintenance and upkeep of such resources.
+      <div className="mb-12 w-[85%] mx-auto grid grid-cols-2">
+        <div className="col-span-1">
+          Reconstruction pertains to properties that are extensively damaged or
+          have been completely lost. The process involves the recreation of the
+          original design, appearance, and materials of the road/routes or
+          related features. In this case of historic roads/routes, this may
+          require a complete replacement if it has deteriorated beyond repair,
+          utilizing the original specifications and construction methods.
+        </div>
+        <div className="col-span-1"></div>
       </div>
     </div>
   );

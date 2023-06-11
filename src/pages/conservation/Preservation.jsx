@@ -12,14 +12,17 @@ const Preservation = () => {
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
       <Basic title="CONSERVATION" numbers={arr}></Basic>
-      <div className="mb-12 w-[85%] mx-auto">
-        In the context of heritage conservation, preservation pertains to
-        properties that have been preserved in their largely intact form, and
-        are representative of the period of significance. This includes historic
-        roads/routes and related resources that have maintained their original
-        design and materials in a good state of repair. The preservation
-        approach primarily involves activities and measures that focus on
-        maintenance and upkeep of such resources.
+      <div className="mb-12 w-[85%] mx-auto grid grid-cols-2">
+        <div className="col-span-1">
+          In the context of heritage conservation, preservation pertains to
+          properties that have been preserved in their largely intact form, and
+          are representative of the period of significance. This includes
+          historic roads/routes and related resources that have maintained their
+          original design and materials in a good state of repair. The
+          preservation approach primarily involves activities and measures that
+          focus on maintenance and upkeep of such resources.
+        </div>
+        <div className="col-span-1 "></div>
       </div>
     </div>
   );
