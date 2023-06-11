@@ -1,5 +1,5 @@
 import React from "react";
-import background from "/src/assets/bg.jpg";
+import background from "/src/assets/bg.webp";
 import img from "/src/assets/Artboard1.png";
 import img1 from "/src/assets/MARG.png";
 import CulturalRoutes from "/src/components/landingPage/CulturalRoutes";
