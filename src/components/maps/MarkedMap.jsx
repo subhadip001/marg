@@ -27,9 +27,9 @@ const MarkedMap = () => {
   return (
     <GoogleMap
       id="map"
-      zoom={2}
+      zoom={4}
       center={markerPosition}
-      mapContainerStyle={{ height: "60vh", width: "100%" }}
+      mapContainerStyle={{ height: "70vh", width: "100%" }}
       options={defaultMapOptions}
     >
       <Marker

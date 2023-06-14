@@ -6,7 +6,7 @@ const DetailMap = () => {
       <iframe
         src="https://www.google.com/maps/d/embed?mid=1EFSWRgrgw-qPrvML3Uo-oPsehpvTkWo&ehbc=2E312F"
         width="100%"
-        height="600"
+        className="h-[86vh]"
       ></iframe>
     </div>
   );
