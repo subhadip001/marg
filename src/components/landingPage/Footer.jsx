@@ -15,14 +15,14 @@ export default function Footer() {
           <p>India - 247667</p>
           <br />
           <br />
-          <VisitorCounter/>
+          <VisitorCounter />
         </div>
       </div>
 
       <div className="font-['Open_Sans']">
         <h1
           for="message"
-          class="block mb-2 text-2xl text-right font-[600] text-[#365868]"
+          className="block mb-2 text-2xl text-right font-[600] text-[#365868]"
         >
           CONNECT WITH US
         </h1>
@@ -30,19 +30,19 @@ export default function Footer() {
           <textarea
             id="message"
             rows="7"
-            class="block p-2.5 w-[70%] text-sm placeholder-[#3D3D3D] placeholder:italic  border border-black "
+            className="block p-2.5 w-[70%] text-sm placeholder-[#3D3D3D] placeholder:italic  border border-black "
             placeholder="Your message..."
           ></textarea>
 
           <textarea
             id="email"
             rows="1"
-            class="block p-2.5 w-[70%] text-sm text-black placeholder:italic placeholder-[#3D3D3D] border border-[#000000] "
+            className="block p-2.5 w-[70%] text-sm text-black placeholder:italic placeholder-[#3D3D3D] border border-[#000000] "
             placeholder="Email id"
           ></textarea>
           <button
             type="submit"
-            class="w-fit h-fit px-6 py-1 text-[100%]  bg-[#2B4F60] text-[#EAD3CB] font-semibold "
+            className="w-fit h-fit px-6 py-1 text-[100%]  bg-[#2B4F60] text-[#EAD3CB] font-semibold "
           >
             Submit
           </button>

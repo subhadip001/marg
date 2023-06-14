@@ -28,7 +28,7 @@ const Home = () => {
           Mapping Ancient and Historic Routes using Geo-Spatial Tools
         </h2>
 
-        <hr class=" w-[20vw] h-1 mx-auto my-4  bg-white border-0 rounded 	" />
+        <hr className=" w-[20vw] h-1 mx-auto my-4  bg-white border-0 rounded 	" />
 
         <h3 className="text-lg font-semibold text-[#BDC7C9]">
           Funded By SHRI Science and Heritage Research Initiative, Department of

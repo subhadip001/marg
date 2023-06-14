@@ -14,7 +14,7 @@ const About = () => {
           </h1>
         </div>
         <div className="w-[85%] mx-auto ">
-          <ul class=" flex flex-wrap items-center gap-8 divide-x-2 divide-[#FFFFFF] text-[18px]  ">
+          <ul className=" flex flex-wrap items-center gap-8 divide-x-2 divide-[#FFFFFF] text-[18px]  ">
             <li className="h-12 flex items-center pl-8  text-[#2B4F60] first:pl-0 ">
               <NavLink
                 to="/about/themarg"

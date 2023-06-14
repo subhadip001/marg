@@ -27,19 +27,19 @@ export default function TradeRoutes() {
         <div className="flex justify-between">
           <button
             type="button"
-            class="text-[#2B4F60] bg-[#D9D9D9] font-semibold rounded-full text-lg px-6 py-4 text-center"
+            className="text-[#2B4F60] bg-[#D9D9D9] font-semibold rounded-full text-lg px-6 py-4 text-center"
           >
             <Link>MENTAL MAPPING</Link>
           </button>
           <button
             type="button"
-            class="text-[#2B4F60] bg-[#D9D9D9] font-semibold rounded-full text-lg px-6 py-4 text-center"
+            className="text-[#2B4F60] bg-[#D9D9D9] font-semibold rounded-full text-lg px-6 py-4 text-center"
           >
             <Link>TANGIBLE ASSETS</Link>
           </button>
           <button
             type="button"
-            class="text-[#2B4F60] bg-[#D9D9D9] font-semibold rounded-full text-lg px-6 py-4 text-center"
+            className="text-[#2B4F60] bg-[#D9D9D9] font-semibold rounded-full text-lg px-6 py-4 text-center"
           >
             <Link>INTANGIBLE ASSETS</Link>
           </button>

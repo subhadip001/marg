@@ -6,6 +6,7 @@ const CulturalRoads = () => {
   const arr = [
     { link: "/explore/historicroutes", name: "Historic Roads / Routes" },
     { link: "/explore/culturalroutes", name: "Cultural Routes" },
+    { link: "/explore/railwayroutes", name: "Railway Routes" },
   ];
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">

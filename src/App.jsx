@@ -29,6 +29,8 @@ import Preservation from "./pages/conservation/Preservation";
 import Reconstruction from "./pages/conservation/Reconstruction";
 import Rehabilitation from "./pages/conservation/Rehabilitation";
 import Restoration from "./pages/conservation/Restoration";
+import RailWayRoutes from "./pages/explore/RailwayRoutes";
+import DetailMap from "./components/maps/DetailMap";
 
 function App() {
   const Layout = () => {
@@ -70,6 +72,14 @@ function App() {
             {
               path: "historicroutes",
               element: <Explore />,
+            },
+            {
+              path: "railwayroutes",
+              element: <RailWayRoutes />,
+            },
+            {
+              path: "railwayroutes/details",
+              element: <DetailMap />,
             },
           ],
         },
