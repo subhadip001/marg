@@ -31,6 +31,7 @@ import Rehabilitation from "./pages/conservation/Rehabilitation";
 import Restoration from "./pages/conservation/Restoration";
 import RailWayRoutes from "./pages/explore/RailwayRoutes";
 import DetailMap from "./components/maps/DetailMap";
+import MapDetailsPage from "./pages/explore/MapDetailsPage";
 
 function App() {
   const Layout = () => {
@@ -80,6 +81,10 @@ function App() {
             {
               path: "railwayroutes/details",
               element: <DetailMap />,
+            },
+            {
+              path: "railwayroutes/details/map-point-details/:mapPointId",
+              element: <MapDetailsPage />,
             },
           ],
         },

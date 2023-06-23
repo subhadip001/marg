@@ -1,6 +1,8 @@
 import { GoogleMap, InfoWindow, Marker } from "@react-google-maps/api";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { AiTwotoneCheckCircle } from "react-icons/ai";
+
 
 const MarkedMap = () => {
   const [showInfoWindow, setShowInfoWindow] = useState(false);
@@ -24,17 +26,57 @@ const MarkedMap = () => {
     lng: 76.9375,
   };
 
+  const mapStyles = [
+    {
+      featureType: "water",
+      elementType: "geometry",
+      stylers: [
+        { color: "#e9e9e9" },
+        { lightness: 17 }
+      ]
+    },
+    {
+      featureType: "landscape",
+      elementType: "geometry",
+      stylers: [
+        { color: "#f5f5f5" },
+        { lightness: 20 }
+      ]
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry.fill",
+      stylers: [
+        { color: "#ffffff" },
+        { lightness: 17 }
+      ]
+    },
+    // Add more custom styles here...
+  ];
+
+  const redDotIcon = {
+    path: window.google.maps.SymbolPath.CIRCLE,
+    fillColor: '#845460',
+    fillOpacity: 1,
+    strokeWeight: 0,
+    scale: 12,
+  };
+
   return (
     <GoogleMap
       id="map"
       zoom={4}
       center={markerPosition}
       mapContainerStyle={{ height: "70vh", width: "100%" }}
-      options={defaultMapOptions}
+      options={{
+        ...defaultMapOptions,
+        styles: mapStyles,
+      }}
     >
       <Marker
         position={markerPosition}
         onClick={handleMarkerClick}
+        icon={redDotIcon}
       />
       {showInfoWindow && (
         <InfoWindow

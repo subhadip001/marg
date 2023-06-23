@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="bg-bb w-full">
-      <div className="font-['Lato'] h-24 w-[95%] mx-auto flex items-center justify-between content-center">
+      <div className="font-['Lato'] h-20 w-[95%] mx-auto flex items-center justify-between content-center">
         <Link to="/" className="flex items-center">
           <span className="self-center text-[calc(1.5vw+0.5rem)] font-[550] whitespace-nowrap text-white">
             MARG- Historic Roads

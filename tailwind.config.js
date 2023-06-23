@@ -8,6 +8,7 @@ export default {
         list: "#BDC7C9",
         hbg: "#1E1E1E54",
         mapping: "#EAD3CB",
+        secondary: "#845460",
       },
     
     },
