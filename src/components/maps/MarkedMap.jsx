@@ -1,8 +1,6 @@
 import { GoogleMap, InfoWindow, Marker } from "@react-google-maps/api";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { AiTwotoneCheckCircle } from "react-icons/ai";
-
 
 const MarkedMap = () => {
   const [showInfoWindow, setShowInfoWindow] = useState(false);
@@ -29,29 +27,55 @@ const MarkedMap = () => {
   const mapStyles = [
     {
       featureType: "water",
-      elementType: "geometry",
+      elementType: "geometry.strokeWidth",
       stylers: [
-        { color: "#e9e9e9" },
+        { color: "#FFFFFF" },
         { lightness: 17 }
       ]
     },
     {
       featureType: "landscape",
-      elementType: "geometry",
+      elementType: "geometry.stokeWidth",
       stylers: [
-        { color: "#f5f5f5" },
+        { color: "#BCBCBC" },
         { lightness: 20 }
       ]
     },
     {
       featureType: "road.highway",
-      elementType: "geometry.fill",
+      elementType: "geometry.stroke",
       stylers: [
         { color: "#ffffff" },
         { lightness: 17 }
       ]
     },
-    // Add more custom styles here...
+    {
+      featureType: "administrative",
+      elementType: "geometry.stroke",
+      stylers: [
+        {
+          visibility: "off"
+        }
+      ]
+    },
+    {
+      featureType: "administrative",
+      elementType: "geometry",
+      stylers: [
+        {
+          visibility: "off"
+        }
+      ]
+    },
+    {
+      featureType: "administrative",
+      elementType: "labels.text",
+      stylers: [
+        {
+          visibility: "off"
+        }
+      ]
+    }
   ];
 
   const redDotIcon = {
@@ -65,9 +89,12 @@ const MarkedMap = () => {
   return (
     <GoogleMap
       id="map"
-      zoom={4}
-      center={markerPosition}
-      mapContainerStyle={{ height: "70vh", width: "100%" }}
+      zoom={2.3}
+      center={{
+        lat: 30.852222,
+        lng: 15.9375,
+      }}
+      mapContainerStyle={{ height: "100vh", width: "100%" }}
       options={{
         ...defaultMapOptions,
         styles: mapStyles,

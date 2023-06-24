@@ -32,7 +32,7 @@ const Navbar = () => {
                 to="/identification&development/methodology"
                 className="block   text-white"
               >
-                Identification & Development
+                Identification & Documentation
               </Link>
             </li>
             <li>

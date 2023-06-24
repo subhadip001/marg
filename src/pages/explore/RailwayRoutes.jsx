@@ -13,9 +13,9 @@ const RailWayRoutes = () => {
     { link: "/explore/railwayroutes", name: "Railway Routes" },
   ];
   return (
-    <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
+    <div className="font-['Open_Sans'] flex flex-wrap items-center justify-center place-content-center">
       <Basic title="EXPLORE" numbers={arr}></Basic>
-      <div className="mb-12 w-[85%] mx-auto">
+      <div className="mb-12 w-[100%] mx-auto">
         <MarkedMap />
         <Link to={`/explore/railwayroutes/details/map-point-details/${1}`}>test link</Link>
       </div>
