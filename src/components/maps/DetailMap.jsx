@@ -64,11 +64,10 @@ const DetailMap = () => {
                 Himachal Pradesh <br />{" "}
                 <span className="font-semibold"> Travel distance: </span> 96.60
                 kilometers <br />{" "}
-                <span className="font-semibold"> Management </span>
-                <br />
-                <span className="font-semibold">Authority: </span> Northern
-                Railways Ownership: Ministry of Railways, India Year of
-                Foundation: 1903
+                <span className="font-semibold"> Management Authority: </span>{" "}
+                Northern Railways <br />{" "}
+                <span className="font-semibold"> Ownership: </span> Ministry of
+                Railways, India Year of Foundation: 1903
               </div>
             </div>
             <div className="text-base">
