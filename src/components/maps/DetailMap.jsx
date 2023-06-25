@@ -11,7 +11,10 @@ const DetailMap = () => {
 
   //write code to close the left details when clicked outside the left details
   const handleClickOutside = (event) => {
-    if (leftDetailsRef.current && !leftDetailsRef.current.contains(event.target)) {
+    if (
+      leftDetailsRef.current &&
+      !leftDetailsRef.current.contains(event.target)
+    ) {
       setShowLeftDetails(false);
     }
   };
@@ -23,24 +26,20 @@ const DetailMap = () => {
     };
   }, []);
 
-
-
-  
-
   const LeftDetails = () => {
     return (
       <>
-        <div className="bg-[#F2F2F2] w-[30vw] h-[100vh] px-3 py-5">
+        <div className="bg-[#F2F2F2] w-[30vw] p-5 text-[#2B4F60] rounded-md">
           <div className="flex flex-col justify-center gap-5">
             <div className="flex justify-between items-center">
-              <span className="font-bold">Kalka Shimla Route</span>
+              <span className="font-bold text-xl">Kalka Shimla Route</span>
               <AiOutlineClose
                 onClick={handleclose}
-                className="cursor-pointer"
+                className="cursor-pointer text-xl"
               />
             </div>
-            <div>
-              <span>Description</span>
+            <div className="text-base">
+              <span className="font-bold">Description</span>
               <p>
                 Mountain Railways of Kalka-Shimla weaves up through the
                 Himalayan foothills for 96.5km. Traversing spectacular mountain
@@ -52,21 +51,34 @@ const DetailMap = () => {
                 along the length of the line of varying width.
               </p>
             </div>
-            <div>
-              <span>General Characteristics</span>
+            <div className="text-base">
+              <span className="font-bold">General Characteristics</span>
               <div>
-                Geographical co-ordinates: Between 300 51' 08” N & 310 06' 17”
-                N. and 760 56' 15” E & 770 10' 03” E. Region: Haryana & Himachal
-                Pradesh Travel distance: 96.60 kilometers Management Authority:
-                Northern Railways Ownership: Ministry of Railways, India Year of
+                <span className="font-semibold">
+                  {" "}
+                  Geographical co-ordinates:{" "}
+                </span>{" "}
+                Between 300 51' 08” N & 310 06' 17” N. and 760 56' 15” E & 770
+                10' 03” E. <br />{" "}
+                <span className="font-semibold"> Region: </span> Haryana &
+                Himachal Pradesh <br />{" "}
+                <span className="font-semibold"> Travel distance: </span> 96.60
+                kilometers <br />{" "}
+                <span className="font-semibold"> Management </span>
+                <br />
+                <span className="font-semibold">Authority: </span> Northern
+                Railways Ownership: Ministry of Railways, India Year of
                 Foundation: 1903
               </div>
             </div>
-            <div>
-              <span>UNESCO(WHS)</span>
+            <div className="text-base">
+              <span className="font-bold">UNESCO(WHS)</span>
               <p>
-                Date of Award: 10th July, 2008 Category: Mountain Railways of
-                India Criteria: (ii) (iv)
+                <span className="font-semibold"> Date of Award: </span> 10th
+                July, 2008 <br />{" "}
+                <span className="font-semibold"> Category:</span> Mountain
+                Railways of India <br />{" "}
+                <span className="font-semibold"> Criteria: </span>(ii) (iv)
               </p>
             </div>
           </div>
@@ -85,16 +97,18 @@ const DetailMap = () => {
   return (
     <div className="relative">
       {showLeftDetails && (
-        <div className="absolute" ref={leftDetailsRef}>
+        <div className="absolute left-5 top-10" ref={leftDetailsRef}>
           <LeftDetails />
         </div>
       )}
       <div>
         <iframe
-          onClick={() => {setShowLeftDetails(false)}}
+          onClick={() => {
+            setShowLeftDetails(false);
+          }}
           src="https://www.google.com/maps/d/embed?mid=1EFSWRgrgw-qPrvML3Uo-oPsehpvTkWo&ehbc=2E312F"
           width="100%"
-          className="h-[100vh]"
+          className="h-[110vh]"
         ></iframe>
       </div>
     </div>
