@@ -15,7 +15,7 @@ const RailWayRoutes = () => {
   return (
     <div className="font-['Open_Sans'] flex flex-wrap items-center justify-center place-content-center">
       <Basic title="EXPLORE" numbers={arr}></Basic>
-      <div className="mb-12 w-[100%] mx-auto">
+      <div className="w-[100%] mx-auto">
         <MarkedMap />
       </div>
     </div>
