@@ -98,6 +98,7 @@ const MarkedMap = () => {
       options={{
         ...defaultMapOptions,
         styles: mapStyles,
+        minZoom: 2.3,
       }}
     >
       <Marker

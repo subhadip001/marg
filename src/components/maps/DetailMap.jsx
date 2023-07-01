@@ -42,6 +42,7 @@ const DetailMap = () => {
       zoom: 12,
       center: { lat: 30.94, lng: 77 },
       mapTypeId: "styled",
+      minZoom: 10,
     });
 
     var brownishMapType = new google.maps.StyledMapType(
