@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { secondMapDetailsData } from "../../../store/mapDetailsData";
+import kalkaShimla1 from "../../../store/Kalka Shimla Train Route1.json";
+import kalkaShimla2 from "../../../store/Kalka Shimla Train Route2.json";
 
 const DetailMap = () => {
   const [showLeftDetails, setShowLeftDetails] = useState(true);
@@ -10,7 +12,6 @@ const DetailMap = () => {
     setShowLeftDetails(false);
   };
 
-  //write code to close the left details when clicked outside the left details
   const handleClickOutside = (event) => {
     if (
       leftDetailsRef.current &&
@@ -40,16 +41,16 @@ const DetailMap = () => {
       [
         {
           stylers: [
-            { hue: "#ebdedd" }, // Adjust the hue for brownish color
-            { saturation: -20 }, // Decrease the saturation for a muted effect
-            { lightness: 5 }, // Adjust the lightness for the overall brightness
+            { hue: "#ebdedd" },
+            { saturation: -30 },
+            { lightness: 5 },
           ],
         },
       ],
-      { name: "Brownish Map" } // Name of the custom map type
+      { name: "Brownish Map" }
     );
   
-    // Set the custom map type to the map
+    
     map.mapTypes.set("styled", brownishMapType);
     map.setMapTypeId("styled");
 
@@ -59,8 +60,8 @@ const DetailMap = () => {
       strokeOpacity: 1,
     });
 
-    map.data.loadGeoJson("../../../store/Kalka Shimla Train Route1.json");
-    map.data.loadGeoJson("../../../store/Kalka Shimla Train Route2.json");
+    map.data.loadGeoJson(kalkaShimla1);
+    map.data.loadGeoJson(kalkaShimla2);
 
     var infowindow = new google.maps.InfoWindow();
 
