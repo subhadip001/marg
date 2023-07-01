@@ -99,6 +99,7 @@ const MarkedMap = () => {
         ...defaultMapOptions,
         styles: mapStyles,
         minZoom: 2.3,
+        gestureHandling: "greedy"
       }}
     >
       <Marker
