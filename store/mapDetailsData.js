@@ -31,4 +31,17 @@ const mapDetailsData = [
   },
 ];
 
+const secondMapDetailsData = [
+  {
+    id: "Kalka",
+    name: "Kalka Railway Station",
+    desc : {
+      elevation : "656 m",
+      distt : "Panchkula, Haryana",
+    },
+    link : "/explore/railwayroutes/details/map-point-details/1"
+  },
+];
+
+export { secondMapDetailsData };
 export default mapDetailsData;

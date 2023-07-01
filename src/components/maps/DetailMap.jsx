@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import { secondMapDetailsData } from "../../../store/mapDetailsData";
 
 const DetailMap = () => {
   const [showLeftDetails, setShowLeftDetails] = useState(true);
@@ -24,6 +25,86 @@ const DetailMap = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
+  }, []);
+
+  useEffect(() => {
+    var map;
+
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 12,
+      center: { lat: 30.94, lng: 77 },
+      mapTypeId: "styled",
+    });
+
+    var brownishMapType = new google.maps.StyledMapType(
+      [
+        {
+          stylers: [
+            { hue: "#ebdedd" }, // Adjust the hue for brownish color
+            { saturation: -20 }, // Decrease the saturation for a muted effect
+            { lightness: 5 }, // Adjust the lightness for the overall brightness
+          ],
+        },
+      ],
+      { name: "Brownish Map" } // Name of the custom map type
+    );
+  
+    // Set the custom map type to the map
+    map.mapTypes.set("styled", brownishMapType);
+    map.setMapTypeId("styled");
+
+    map.data.setStyle({
+      strokeColor: "#BA265C",
+      strokeWeight: 3,
+      strokeOpacity: 1,
+    });
+
+    map.data.loadGeoJson("../../../store/Kalka Shimla Train Route1.json");
+    map.data.loadGeoJson("../../../store/Kalka Shimla Train Route2.json");
+
+    var infowindow = new google.maps.InfoWindow();
+
+    map.data.addListener("click", function (event) {
+      var id = event.feature.h.name;
+      const mapDetailsData = secondMapDetailsData.find(
+        (map) => map.id == event.feature.h.name
+      );
+      const name = mapDetailsData.name;
+      const elevation = mapDetailsData.desc.elevation;
+      const distt = mapDetailsData.desc.distt;
+      const link = mapDetailsData.link;
+      var nameHTML =
+        "<div style='width:150px; font-weight: 700'; font-size: 1rem>" +
+        name +
+        "</div>";
+
+      var elevationHTML =
+        "<span style='font-size: 0.875rem;'>" +
+        "Elevation: " +
+        elevation +
+        "</span>";
+      var disttHTML = "<span>" + "District: " + distt + "</span>";
+
+      var linkHTML =
+        "<a style='text-decoration: underline;' href=" +
+        link +
+        ">" +
+        "<em>" +
+        "Click here for details" +
+        "</em>" +
+        "</a>";
+      infowindow.setContent(
+        "<div style='width:200px; color: #2B4F60 ; padding: 5px 8px ; display: flex; flex-direction: column; gap: 7px; '>" +
+          nameHTML +
+          elevationHTML +
+          disttHTML +
+          linkHTML +
+          "</div>"
+      );
+      infowindow.setPosition(event.feature.getGeometry().get());
+      infowindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+      infowindow.open(map);
+    });
   }, []);
 
   const LeftDetails = () => {
@@ -96,20 +177,11 @@ const DetailMap = () => {
   return (
     <div className="relative">
       {showLeftDetails && (
-        <div className="absolute left-5 top-10" ref={leftDetailsRef}>
+        <div className="absolute left-5 top-10 z-50" ref={leftDetailsRef}>
           <LeftDetails />
         </div>
       )}
-      <div>
-        <iframe
-          onClick={() => {
-            setShowLeftDetails(false);
-          }}
-          src="https://www.google.com/maps/d/embed?mid=1EFSWRgrgw-qPrvML3Uo-oPsehpvTkWo&ehbc=2E312F"
-          width="100%"
-          className="h-[110vh]"
-        ></iframe>
-      </div>
+      <div id="map" style={{ height: "110vh", width: "100%" }}></div>
     </div>
   );
 };

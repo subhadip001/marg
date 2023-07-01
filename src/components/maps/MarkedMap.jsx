@@ -119,7 +119,7 @@ const MarkedMap = () => {
             <p>Built: </p>
             <Link
               className="italic hover:underline"
-              to="/explore/railwayroutes/details"
+              to="/explore/railwayroutes/detailsMap"
             >
               Click here for details
             </Link>
