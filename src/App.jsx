@@ -83,11 +83,11 @@ function App() {
               element: <DetailMap />,
             },
             {
-              path: "railwayroutes/detailsMap",
+              path: "railwayroutes/detailsMap/:mapId",
               element: <DetailMap />,
             },
             {
-              path: "railwayroutes/details/map-point-details/:mapPointId",
+              path: "railwayroutes/detailsMap/:mapId/:mapPointId",
               element: <MapDetailsPage />,
             },
           ],
