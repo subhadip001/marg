@@ -17,7 +17,6 @@ const RailWayRoutes = () => {
       <Basic title="EXPLORE" numbers={arr}></Basic>
       <div className="mb-12 w-[100%] mx-auto">
         <MarkedMap />
-        <Link to={`/explore/railwayroutes/details/map-point-details/${1}`}>test link</Link>
       </div>
     </div>
   );
