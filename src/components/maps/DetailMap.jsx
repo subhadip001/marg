@@ -60,8 +60,8 @@ const DetailMap = () => {
       strokeOpacity: 1,
     });
 
-    map.data.loadGeoJson(kalkaShimla1);
-    map.data.loadGeoJson(kalkaShimla2);
+    map.data.addGeoJson(kalkaShimla1);
+    map.data.addGeoJson(kalkaShimla2);
 
     var infowindow = new google.maps.InfoWindow();
 
