@@ -10,7 +10,7 @@ const RailWayRoutes = () => {
   const arr = [
     { link: "/explore/historicroutes", name: "Historic Roads / Routes" },
     { link: "/explore/culturalroutes", name: "Cultural Routes" },
-    { link: "/explore/railwayroutes", name: "Railway Routes" },
+    { link: "/explore/railwayroutes", name: "Cultural Heritage" },
   ];
   return (
     <div className="font-['Open_Sans'] flex flex-wrap items-center justify-center place-content-center">
