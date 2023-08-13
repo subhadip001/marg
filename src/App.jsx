@@ -9,6 +9,7 @@ import About from "./pages/about/About";
 
 import Explore from "./pages/explore/HistoricRoads";
 import CulturalRoutes from "./pages/explore/CulturalRoutes";
+import CulturalElements from "./pages/explore/CulturalElements";
 
 import Identification from "./pages/identification/Identification";
 import Classification from "./pages/identification/Classification";
@@ -77,6 +78,10 @@ function App() {
             {
               path: "railwayroutes",
               element: <RailWayRoutes />,
+            },
+            {
+              path: "culturalelements",
+              element: <CulturalElements />,
             },
             {
               path: "railwayroutes/details",
