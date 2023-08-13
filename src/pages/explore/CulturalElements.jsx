@@ -2,7 +2,7 @@ import React from "react";
 import Basic from "/src/components/Basic";
 import img from "/src/assets/image7.png";
 
-const HistoricRoads = () => {
+const CulturalElements = () => {
   const arr = [
     { link: "/explore/historicroutes", name: "Historic Roads / Routes" },
     { link: "/explore/culturalroutes", name: "Cultural Routes" },
@@ -18,4 +18,4 @@ const HistoricRoads = () => {
     </div>
   );
 };
-export default HistoricRoads;
+export default CulturalElements;
