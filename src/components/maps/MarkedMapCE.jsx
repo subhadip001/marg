@@ -2,7 +2,7 @@ import { GoogleMap, InfoWindow, Marker } from "@react-google-maps/api";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const MarkedMap = () => {
+const MarkedMapCE = () => {
   const [showInfoWindow, setShowInfoWindow] = useState(false);
 
   const handleMarkerClick = () => {
@@ -108,11 +108,7 @@ const MarkedMap = () => {
         icon={redDotIcon}
       />
 
-       <Marker
-        position={markerPosition}
-        onClick={handleMarkerClick}
-        icon={redDotIcon}
-      />
+       
       
       {showInfoWindow && (
         <InfoWindow
@@ -121,14 +117,14 @@ const MarkedMap = () => {
         >
           <div>
             <span className="text-lg font-semibold">
-              Kalka Shimla Rail Route
+              Naulas
             </span>
-            <p>UNESCO world heritage site</p>
+            {/* <p>UNESCO world heritage site</p> */}
             <p>Nomination Date: </p>
             <p>Built: </p>
             <Link
               className="italic hover:underline"
-              to="/explore/railwayroutes/detailsMap/1"
+              to="/explore/culturalelements/detailsMap/1"
             >
               Click here for details
             </Link>
@@ -139,4 +135,4 @@ const MarkedMap = () => {
   );
 };
 
-export default MarkedMap;
+export default MarkedMapCE;

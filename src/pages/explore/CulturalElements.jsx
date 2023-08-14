@@ -1,6 +1,7 @@
 import React from "react";
 import Basic from "/src/components/Basic";
-import img from "/src/assets/image7.png";
+// import img from "/src/assets/image7.png";
+import MarkedMapCE from "../../components/maps/MarkedMapCE";
 
 const CulturalElements = () => {
   const arr = [
@@ -12,8 +13,8 @@ const CulturalElements = () => {
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
       <Basic title="EXPLORE" numbers={arr}></Basic>
-      <div className="mb-12 w-[85%] mx-auto">
-        <img src={img} alt="" srcset="" />
+      <div className="w-[100%] mx-auto">
+        <MarkedMapCE />
       </div>
     </div>
   );
