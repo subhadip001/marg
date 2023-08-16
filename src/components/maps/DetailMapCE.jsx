@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { firstMapDetailsData } from "../../../store/mapDetailsData";
 import naulas from "../../../store/Naulas.json";
+import kalkaShimla1 from "../../../store/Kalka Shimla Train Route1.json";
+import kalkaShimla2 from "../../../store/Kalka Shimla Train Route2.json";
 import { useParams } from "react-router-dom";
 
 const DetailMapCE = () => {
@@ -39,7 +41,7 @@ const DetailMapCE = () => {
 
     map = new google.maps.Map(document.getElementById("map"), {
       zoom: 12,
-      center: { lat: 30.94, lng: 77 },
+      center: { lat: 29.03, lng: 78 },
       mapTypeId: "styled",
       minZoom: 10,
       gestureHandling: "greedy",
@@ -64,6 +66,8 @@ const DetailMapCE = () => {
     });
 
     map.data.addGeoJson(naulas);
+    // map.data.addGeoJson(kalkaShimla1);
+
 
     var infowindow = new google.maps.InfoWindow();
 
