@@ -32,6 +32,7 @@ import Rehabilitation from "./pages/conservation/Rehabilitation";
 import Restoration from "./pages/conservation/Restoration";
 import RailWayRoutes from "./pages/explore/RailwayRoutes";
 import DetailMap from "./components/maps/DetailMap";
+import DetailMapCE from "./components/maps/DetailMapCE";
 import MapDetailsPage from "./pages/explore/MapDetailsPage";
 
 function App() {
@@ -90,6 +91,14 @@ function App() {
             {
               path: "railwayroutes/detailsMap/:mapId",
               element: <DetailMap />,
+            },
+            {
+              path: "culturalelements/details",
+              element: <DetailMapCE />,
+            },
+            {
+              path: "culturalelements/detailsMap/:mapId",
+              element: <DetailMapCE />,
             },
             {
               path: "railwayroutes/detailsMap/:mapId/:mapPointId",
