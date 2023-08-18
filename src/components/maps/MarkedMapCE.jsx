@@ -20,8 +20,8 @@ const MarkedMapCE = () => {
   };
 
   const markerPosition = {
-    lat: 30.852222,
-    lng: 76.9375,
+    lat: 29,
+    lng: 79,
   };
 
   const mapStyles = [

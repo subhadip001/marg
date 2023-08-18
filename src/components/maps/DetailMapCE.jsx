@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { firstMapDetailsData } from "../../../store/mapDetailsData";
+import { secondMapDetailsData } from "../../../store/mapDetailsData";
 import naulas from "../../../store/Naulas.json";
 import kalkaShimla1 from "../../../store/Kalka Shimla Train Route1.json";
 import kalkaShimla2 from "../../../store/Kalka Shimla Train Route2.json";
@@ -12,7 +12,7 @@ const DetailMapCE = () => {
 
   const { mapId } = useParams();
 
-  const firstToSecondMapData = firstMapDetailsData.find(
+  const firstToSecondMapData = secondMapDetailsData.find(
     (map) => map.id == mapId
   );
 
@@ -40,8 +40,8 @@ const DetailMapCE = () => {
     var map;
 
     map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 12,
-      center: { lat: 29.03, lng: 78 },
+      zoom: 10,
+      center: { lat: 29.4, lng: 79.6 },
       mapTypeId: "styled",
       minZoom: 10,
       gestureHandling: "greedy",
