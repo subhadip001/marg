@@ -95,4 +95,30 @@ const firstMapDetailsData = [
   },
 ];
 
-export { firstMapDetailsData, kalkaShimlaRailwayData, grandTrunkRoadData };
+const secondMapDetailsData = [
+  {
+    id: 1,
+    name: "Naulas",
+    desc: "",
+    generalCharacteristics: {
+      coordinates:
+        "",
+      region: "",
+      tDistance: "",
+      manageAuth: "",
+      ownership: "",
+      yof: "",
+    },
+    unescoData: {
+      dateOfAward: "",
+      catagory: "",
+      criteria: "",
+    },
+    secondPagePointsData: kalkaShimlaRailwayData,
+  } 
+];
+
+
+
+
+export { secondMapDetailsData,firstMapDetailsData, kalkaShimlaRailwayData, grandTrunkRoadData };
