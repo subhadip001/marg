@@ -8,7 +8,13 @@ const VisitorCounter = () => {
     // You can replace this with your actual implementation
     const fetchVisitors = async () => {
       try {
-        const response = await fetch("/api/visitors");
+        const response = await fetch(
+          "https://qdbuzzief5.execute-api.ap-south-1.amazonaws.com/prod/marg/visitor"
+        );
+        const postoptions={
+          method:"POST"
+        }
+        fetch("https://qdbuzzief5.execute-api.ap-south-1.amazonaws.com/prod/marg/visitor",postoptions)
         const data = await response.json();
         setVisitors(data.count);
       } catch (error) {
