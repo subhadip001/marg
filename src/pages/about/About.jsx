@@ -7,12 +7,12 @@ import img2 from "/src/assets/3.jpg";
 const About = () => {
   return (
     <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
-      <div className="bg-[#BDC7C9] w-full h-full pt-16 pb-4 flex flex-col flex-wrap gap-8  font-['Open_Sans'] ">
-        <div className="w-[85%] mx-auto ">
+      <div className="bg-[#BDC7C9] w-full h-full pt-4 pb-4 flex flex-col flex-wrap gap-8  font-['Open_Sans'] ">
+        {/* <div className="w-[85%] mx-auto ">
           <h1 className="text-[calc(1.7vw+0.5rem)] font-bold text-[#845460]">
             ABOUT
           </h1>
-        </div>
+        </div> */}
         <div className="w-[85%] mx-auto ">
           <ul className=" flex flex-wrap items-center gap-8 divide-x-2 divide-[#FFFFFF] text-[18px]  ">
             <li className="h-12 flex items-center pl-8  text-[#2B4F60] first:pl-0 ">
