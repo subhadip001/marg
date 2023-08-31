@@ -18,10 +18,10 @@ const Basic = (props) => {
   ));
   return (
     <>
-      <div className="bg-[#BDC7C9] w-full h-full pb-4 flex flex-col flex-wrap gap-8  font-['Open_Sans'] ">
+      <div className="bg-[#BDC7C9] w-full h-full pb-2 flex flex-col flex-wrap gap-8  font-['Open_Sans'] ">
         <div className="w-[85%] mx-auto "></div>
         <div className="w-[85%] mx-auto ">
-          <ul className=" flex flex-wrap items-center gap-8 divide-x-2 divide-[#FFFFFF] text-[18px]  ">
+          <ul className=" flex flex-wrap items-center gap-5 divide-x-2 divide-[#FFFFFF] text-[18px]  ">
             {listItems}
           </ul>
         </div>

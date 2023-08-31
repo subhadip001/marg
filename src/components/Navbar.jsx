@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
 
         <div className=" block w-auto" id="navbar-default">
-          <ul className="font-[500] flex text-lg space-x-10">
+          <ul className="font-[500] flex text-base space-x-5">
             <li>
               <Link
                 to="/about/themarg"

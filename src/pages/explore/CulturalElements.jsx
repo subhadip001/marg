@@ -11,7 +11,7 @@ const CulturalElements = () => {
     { link: "/explore/culturalelements", name: "Cultural Elements" },
   ];
   return (
-    <div className="font-['Open_Sans'] flex flex-wrap gap-12 items-center justify-center place-content-center">
+    <div className="font-['Open_Sans'] flex flex-wrap gap-2 items-center justify-center place-content-center">
       <Basic title="EXPLORE" numbers={arr}></Basic>
       <div className="w-[100%] mx-auto">
         <MarkedMapCE />
