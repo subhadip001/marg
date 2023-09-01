@@ -18,7 +18,7 @@ export default function Footer() {
     // };
     // console.log(data);
 
-    fetch('https://sheetdb.io/api/v1/297vrs2j90b23', {
+    fetch('https://sheetdb.io/api/v1/297vrs2j90b23?sheet=sheet2', {
     method: 'POST',
     headers: {
         'Accept': 'application/json',
@@ -27,30 +27,21 @@ export default function Footer() {
     body: JSON.stringify({
         data: [
             {
-                Email: formEmail,
-                Message: formMessage
+                'Email': formEmail,
+                'Message': formMessage
             }
         ]
     })
 })
-  .then((response) => {response.json()})
-  .then((data) => console.log(data));
-  
+    .then((response) => { 
+    response.json()
+    }
+  )
+  .then((data) => {
+    console.log(data)
+    setFormEmail(" ")
+    setFormMessage(" ")});
 
-    // axios.post("https://sheet.best/api/sheets/5faec46e-2879-4b59-9091-9d2ea51efc28",data).then((response)=>{
-    //   console.log(response)
-    //   setFormEmail(' ')
-    //   setFormMessage(' ')
-    // })
-  
-    // let res = await fetch(
-    //   "https://script.google.com/macros/s/AKfycbyeqfpKn6cMx_W8Vb0-WibCm6xYAM5BM76YPWN9VjBFovqpikUApEZfHu2xCUHGTljh/exec",
-    //   {
-    //     method: "POST",
-    //     body: data,
-    //   }
-    // );
-    // console.log(res);
   };
 
   return (
@@ -84,6 +75,7 @@ export default function Footer() {
           <textarea
           required
             id="message"
+            value={formMessage}
             rows="7"
             className="block p-2.5 w-[70%] text-sm placeholder-[#3D3D3D] placeholder:italic  border border-black "
             placeholder="Your message..."
@@ -95,6 +87,7 @@ export default function Footer() {
           <textarea
           required
             id="email"
+            value={formEmail}
             rows="1"
             className="block p-2.5 w-[70%] text-sm text-black placeholder:italic placeholder-[#3D3D3D] border border-[#000000] "
             placeholder="Email id"
