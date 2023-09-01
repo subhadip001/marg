@@ -24,10 +24,12 @@ const VisitorCounter = () => {
 
     // Call the fetchVisitors function
     fetchVisitors();
+    console.log(visitors)
 
     // You can also set up an interval to fetch visitors periodically
     // For example, every 1 minute
     const interval = setInterval(fetchVisitors, 60000);
+
 
     // Clean up the interval on component unmount
     return () => {
